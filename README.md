@@ -2,10 +2,10 @@
 Software for Students
 (Notes, Class Tracking, Homework, Assignments)
 
-Note-managing Software is an web application that caters the need of student users by providing functionalities of note management, class tracking, events tracking, embedding video reference material and support pdf and image note materials.
+Note-managing Software is a web application that caters the needs of student users by providing functionalities of note management, class tracking, events tracking, embedded video reference material and support pdf and image note materials.
 
 ## Features 
-- **Note taking** - Allowing students to make , store and organise notes while providing a search functionality for Easy access of relevant notes material. 
+- **Note taking** - allowing students to make , store and organise notes while providing a search functionality for easy access of relevant notes material. 
 - **Reference video window** - an embedded video window is provided topic wise for reference.
 - **PDF and image notes**  - relevant pdf and image support provided topic wise for reference.
 - **Review column** - to make additional comments, track progress and completion level on a particular topic,  organised topic wise for a subject.
