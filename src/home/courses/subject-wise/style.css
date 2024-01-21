@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; 
+    border-radius: 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px; 
+}
+
+/* Apply styles to the entire table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Style the table header */
+th {
+    background-color: #b38add;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style alternating rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style table cells */
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Hover effect on table rows */
+tr:hover {
+    background-color: #e0e0e0;
+}
+
+td a {
+    text-decoration: none;
+}
