@@ -3,10 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notify</title>
+    <title>NOTIFY</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="logo">
+            </div>
+            <div class="logo-name">
+                NOTIFY
+            </div>
+            <div class="nav-links">
+                <button class="btn-login" type="button" onclick="showModal()">Login</button>
+            </div>
+        </nav>
+
+        <div class="overlay" onclick="closeModal()"></div>
+
+        <div class="loginform">
+            <span onclick="closeModal()">&times;</span>
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <div>
+                    <label for="">Username</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Password</label>
+                    <input type="password">
+                </div>
+                <button class="btn-login">LOGIN</button>
+            </form>
+        </div>
+    </header>
+
+    <div id="punchline">
+        <h1 class="has-text-align-center wp-block-heading" id="the-simplest-way-to-keep-notes">Notify : The simplest way to keep notes.</h1>
+        <p id="punchline-1">
+            Remember everything and tackle any project with your notes, tasks, and schedule all in one place.
+        </p>
+    </div>
+
+    <div class="mid-image">
+        <img src="./mid.avif" alt="mid" height="400px">
+    </div>
+
+    <script>
+        function showModal() {
+            document.querySelector('.overlay').classList.add('show-overlay');
+            document.querySelector('.loginform').classList.add('showloginform');
+        } 
+
+        function closeModal() {
+            document.querySelector('.overlay').classList.remove('show-overlay');
+            document.querySelector('.loginform').classList.remove('showloginform');
+        }
+
+        var btnlogin=document.querySelector(".btn-login");
+        btnlogin.addEventListener("click", showModal);
+
+        var c=document.querySelector("span");
+        c.addEventListener("click", closeModal);
+
+        function handleLogin(event) {
+            event.preventDefault();
+            var username = document.querySelector('input[type="text"]').value;
+            localStorage.setItem('username', username);
+            window.location.href = './main/main.html';
+    }
+    </script>
 </body>
 </html>

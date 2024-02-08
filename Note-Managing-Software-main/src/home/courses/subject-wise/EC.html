@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Chemistry</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./logo.png" alt="logo">
+            </div>
+            <div class="logo-name">
+                ENGINEERING CHEMISTRY
+            </div>
+            <div class="nav-links">
+                <a href="../courses.html">Courses</a>
+            </div>
+        </nav>
+    </header>
+
+    <h2>Chapterwise Notes : </h2>
+    <table>
+        <tr>
+            <th>S. No.</th>
+            <th>Chapter</th>
+            <th>Reference</th>
+            <th>Notes</th>
+            <th>Review</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Polymers</td>
+            <td><a href="javascript:void(0);" onclick="openYoutubePopup('UwRVj9rz2QQ')">Open Video</a></td>
+            <td><a href="./notes.pdf" target="_blank">notes</a></td>
+            <td>
+                <textarea id="review1" placeholder="Write your review here" oninput="updateReview(1)"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Electrochemistry</td>
+            <td><a href="javascript:void(0);" onclick="openYoutubePopup('3xDz4s-rlz4')">Open Video</a></td>
+            <td><a href="./notes.pdf" target="_blank">notes</a></td>
+            <td>
+                <textarea id="review1" placeholder="Write your review here" oninput="updateReview(1)"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Solutions</td>
+            <td><a href="javascript:void(0);" onclick="openYoutubePopup('e8cPTtEueC0')">Open Video</a></td>
+            <td><a href="./notes.pdf" target="_blank">notes</a></td>
+            <td>
+                <textarea id="review1" placeholder="Write your review here" oninput="updateReview(1)"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Coordination Compounds</td>
+            <td><a href="javascript:void(0);" onclick="openYoutubePopup('PpuPUMfr91Y')">Open Video</a></td>
+            <td><a href="./notes.pdf" target="_blank">notes</a></td>
+            <td>
+                <textarea id="review1" placeholder="Write your review here" oninput="updateReview(1)"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Organic Chemistry</td>
+            <td><a href="javascript:void(0);" onclick="openYoutubePopup('L88uuqmAioU')">Open Video</a></td>
+            <td><a href="./notes.pdf" target="_blank">notes</a></td>
+            <td>
+                <textarea id="review1" placeholder="Write your review here" oninput="updateReview(1)"></textarea>
+            </td>
+        </tr>
+    </table>
+
+    <div id="youtubeModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeYoutubePopup()">&times;</span>
+            <iframe id="youtubePlayer" width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        function openYoutubePopup(videoId) {
+            document.getElementById('youtubePlayer').src = 'https://www.youtube.com/embed/' + videoId;
+            document.getElementById('youtubeModal').style.display = 'block';
+        }
+
+        function closeYoutubePopup() {
+            document.getElementById('youtubePlayer').src = ''; 
+            document.getElementById('youtubeModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

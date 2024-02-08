@@ -1,0 +1,156 @@
+@import url("https //fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+nav {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    border-radius: 10px;
+}
+
+.logo-name {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white !important;
+    text-decoration: none !important;
+    margin-left: 20px;
+}
+
+#punchline {
+    text-align: center;
+    padding: 0px 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#the-simplest-way-to-keep-notes {
+    font-size: 1cm;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+#punchline-1 {
+    font-size: large;
+}
+
+.mid-image {
+    text-align: center;
+    padding-left: 20px; 
+    padding-right: 20px; 
+}
+
+.mid-image img {
+    max-width: 40%;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+        margin-left: auto;
+    }
+
+    .nav-links a {
+        margin: 10px;
+    }
+}
+
+.btn-login {
+    padding: 5px 15px;
+    background-color:  rgb(164, 154, 154);
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-login:hover {
+    background-color:black;
+    color: aliceblue;
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+.showoverlay { 
+    opacity: 1;
+    z-index: 1;
+    pointer-events: auto;
+}
+
+.loginform {
+    width: 350px;
+    background-color: white;
+    padding: 30px 20px;
+    color: black;
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 3px #ccc;
+    transition: 0.5s;
+    z-index: 9;
+}
+
+.showloginform {
+    top: 50%;
+}
+
+.loginform input {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 15px;
+}
+
+.loginform span {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #b38add;
+    color: white;
+    line-height: 30px;
+    cursor: pointer;
+}
