@@ -30,7 +30,7 @@
 
     <div class="banner-container">
         <img class="banner" src="../banner.jpg" alt="banner">
-        <h1 class="centered-heading">Hello, Learner!</h1>
+        <h1 id="welcomeMessage"></h1>
     </div>
 
 
@@ -48,5 +48,13 @@
             <img src="../images/matlab.jpg  " alt="img-4" class="image-item">
         </a>
     </div>
+
+    <script>
+        function displayUsername() {
+            var username = localStorage.getItem('username');
+            document.getElementById('welcomeMessage').innerText = 'Hello, ' + username + "!";
+        }
+        displayUsername();
+    </script>
 </body>
 </html>

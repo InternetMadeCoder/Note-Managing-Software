@@ -106,7 +106,7 @@ nav {
     display: block;
 }
 
-.centered-heading {
+#welcomeMessage {
     position: absolute;
     top: 50%;
     left: 50%;
