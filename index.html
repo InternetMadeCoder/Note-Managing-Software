@@ -72,7 +72,12 @@
             var username = document.querySelector('input[type="text"]').value;
             localStorage.setItem('username', username);
             window.location.href = './main/main.html';
-    }
+        }
+
+        function displayUsername() {
+            var username = localStorage.getItem('username');
+            document.getElementById('welcomeMessage').innerText = 'Hello, ' + username + "!";
+        }
     </script>
 </body>
 </html>
