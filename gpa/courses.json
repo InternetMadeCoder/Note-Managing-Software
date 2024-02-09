@@ -1,0 +1,40 @@
+{
+	"EMM": {
+		"name": "Engineering Materials & Mechanics",
+		"code": "CV1001",
+		"credits": 4,
+		"added": false
+	},
+	"EP": {
+		"name": "Engineering Physics",
+		"code": "PY1001",
+		"credits": 4,
+		"added": false
+	},
+	"CM": {
+		"name": "Computational Mathematics",
+		"code": "MA1002",
+		"credits": 3,
+		"added": false
+	},
+	"MFE": {
+		"name": "MATLAB for Engineers",
+		"credits": 2,
+		"added": false
+	},
+	"BFE": {
+		"name": "Biology for Engineers",
+		"credits": 2,
+		"added": false
+	},
+	"EVS": {
+		"name": "Environmental Studies",
+		"credits": 2,
+		"added": false
+	},
+	"IoT": {
+		"name": "IoT Fab Lab",
+		"credits": 1,
+		"added": false
+	}
+}
