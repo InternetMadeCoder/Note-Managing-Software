@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+body {
+background-color: white;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+nav {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    border-radius: 10px;
+}
+
+.logo-name {
+    margin: 0 10px;
+    font-size: 0.65cm;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white !important;
+    text-decoration: none !important;
+    margin-left: 20px;
+}
+
+.container {
+background-color: #1b1b1b;
+width: min(90%, 500px);
+position: absolute;
+transform: translate(-50%, -50%);
+top: 50%;
+left: 50%;
+padding: 4em 2em;
+border-radius: 0.5em;
+}
+button {
+border: none;
+outline: none;
+cursor: pointer;
+}
+.section-container {
+display: flex;
+gap: 1em;
+justify-content: center;
+}
+.btn {
+padding: 1em 2em;
+border-radius: 0.5em;
+background-color: #3e3f43;
+color: #a9a7a7;
+}
+.btn-focus {
+background-color:#b38add;
+color: #ffffff;
+}
+.time-btn-container {
+display: flex;
+flex-direction: column;
+margin-top: 2em;
+}
+#time {
+text-align: center;
+color: #ffffff;
+font-size: 5em;
+font-weight: 600;
+}
+.btn-container {
+display: flex;
+justify-content: center;
+gap: 2em;
+}
+#btn-start,
+#btn-pause {
+padding: 1em 2em;
+border-radius: 0.5em;
+cursor: pointer;
+background-color: #ffffff;
+}
+#btn-reset {
+background-color: transparent;
+border: none;
+outline: none;
+color: #ffffff;
+font-size: 2em;
+}
+.hide {
+display: none;
+}
+.show {
+display: block;
+}
